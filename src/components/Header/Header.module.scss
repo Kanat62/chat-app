@@ -1,0 +1,82 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: rgb(0 0 0 / 3%) 0px 3px 5px -1px, rgb(0 0 0 / 2%) 0px 5px 5px 0px, rgb(0 0 0 / 2%) 0px 1px 10px 0px;
+    @media screen and (max-width: 420px){
+        padding: 15px ; 
+    }
+}
+.headerTitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+.headerBox{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    position: relative;
+
+}
+.headerIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #f3f3f3;
+    overflow:hidden;
+}
+.headerMenu{
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .1s;
+    &:hover{
+        background: #f3f3f3;
+    }
+    &:active{
+        background: #dddcdc;
+    }
+}
+
+.headerPopup{
+    display: none;
+    
+}
+.headerPopupWrapper{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+}
+.headerPopupOpen{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 110px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: rgb(0 0 0 / 6%) 0px 3px 5px -1px, rgb(0 0 0 / 4%) 0px 5px 8px 0px, rgb(0 0 0 / 4%) 0px 1px 14px 0px;
+    border-radius: 8px;
+    text-align: center;
+    animation: moveTop .2s ease;
+    z-index: 1000;
+}
+
+@keyframes moveTop{
+    0%{
+        top: 55px;
+    }
+    100%{
+        top: 50px;
+    }
+}

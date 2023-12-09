@@ -1,0 +1,19 @@
+.chatContainer{
+    width: 768px;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    background:#fff ;
+    box-shadow: rgb(0 0 0 / 6%) 0px 3px 5px -1px, rgb(0 0 0 / 4%) 0px 5px 8px 0px, rgb(0 0 0 / 4%) 0px 1px 14px 0px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    @media screen and (max-width:878px) {
+        width: 600px;
+    }
+    @media screen and (max-width:650px) {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+}

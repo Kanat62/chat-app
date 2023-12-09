@@ -1,0 +1,86 @@
+.messagesItem{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    font-weight: 500;
+}
+.itemAvatar{
+    width: 35px;
+    height:35px;
+    margin: 0px 5px 0 0;
+    background: #f3f3f3;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (max-width:650px) {
+        width: 35px;
+        height:35px;
+    }
+}
+.item{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    background: #f3f3f3;
+    padding: 7px 10px;
+    border-radius: 0 15px 15px 15px;
+
+}
+.itemName{
+    font-size: 15px;
+    color:rgb(75, 75, 75);
+    padding-bottom: 5px;
+}
+.itemBox{
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+.itemText{
+padding-bottom: 3px;
+
+}
+.itemTime{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    color:rgb(79, 80, 80);
+}
+.itemImgContainer{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    background: #f3f3f3;
+    padding: 7px 10px;
+    border-radius: 0 15px 15px 15px;
+
+    @media screen and (max-width:650px) {
+        width: 50%;
+    }
+   
+}
+.itemImgBox{
+    padding: 5px 0;
+    max-height: 200px;
+    img{
+        border-radius: 5px;
+        width:100%;
+        height: 100%;
+    }
+} 
+.itemImgInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    user-select: none;
+    .itemImgWeight{
+        font-size: 14px;
+    }
+}
